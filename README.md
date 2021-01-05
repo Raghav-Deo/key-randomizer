@@ -24,4 +24,4 @@ python3 key-randomizer.pyc
 
 
 
-All the requirements of this tool is already satisfied in default python3 installation
+All the requirements of this tool are already satisfied in default python3 installation
