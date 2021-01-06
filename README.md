@@ -30,7 +30,7 @@ python3 key-randomizer.py
 
 
 
-All the requirements of this tool are already satisfied in default python3 installation
+All the requirements of this tool are already satisfied in default python 3 installation
 
 
 
