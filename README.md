@@ -18,6 +18,15 @@ cd key-randomizer
 
 
 python3 key-randomizer.py
+
+
+
+
+
+
+
+
+
 (The randomized password will be saved in a file password.txt)
 
 
