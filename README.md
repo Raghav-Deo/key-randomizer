@@ -1,5 +1,5 @@
 # key-randomizer
-This is a simple tool written in python which helps you to randomize your key and make it complex thus hard to guess or crack. Note that this tool does not save any of your passwords.
+This is a simple tool written in python 3 which helps you to randomize your key and make it complex thus hard to guess or crack.
 
 You can use this tool simply by : 
 
@@ -17,8 +17,8 @@ cd key-randomizer
 
 
 
-python3 key-randomizer.pyc
-
+python3 key-randomizer.py
+(The randomized password will be saved in a file password.txt)
 
 
 
