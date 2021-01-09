@@ -1,5 +1,6 @@
 from random import shuffle
 from random import random
+import os
 import sys
 import string
 import secrets
@@ -26,7 +27,12 @@ output = key_randomizer(input("Give your password here : "))
 print("This is your key,this key will also be saved in a text file named as password.txt")
 print("Thanks for using our tool !")
 print(output)
-sys.stdout = open("password.txt", "w")
-print(output)
-sys.stdout.close()
+if os.path.exists("password.txt"):
+    sys.stdout = open("password1.txt", "w")
+    print(output)
+    sys.stdout.close()
+if not os.path.exists("password.txt"):
+    sys.stdout = open("password.txt", "w")
+    print(output)
+    sys.stdout.close()
 quit()
