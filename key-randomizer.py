@@ -1,6 +1,4 @@
 from Packages.main import key_randomizer, password_saver
-
-
 print("Coded and maintained by Raghav Deo")
 output = key_randomizer(input("Give your password here : "))
 print("Thanks for using our tool !")
