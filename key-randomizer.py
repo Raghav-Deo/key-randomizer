@@ -27,7 +27,7 @@ print(output)
 print("This is your key,this key will also be saved in a text file named as password.txt")
 print("Thanks for using our tool !")
 datetime = datetime.now()
-string = '\n' + 'New Password = ' + '' + output + '     ' + datetime.strftime("\n%b-%d-%Y   %H:%M:%S")
+string = '\n' + 'New Password = ' + '' + output + '     ' + datetime.strftime("\n%b-%d-%Y   %H:%M:%S\n")
 with open("password.txt", "a") as file:
     file.write(string)
 quit()
