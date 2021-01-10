@@ -1,7 +1,5 @@
-from random import shuffle
-from random import random
-import os
-import sys
+from random import shuffle, random
+from datetime import datetime
 import string
 import secrets
 
@@ -24,15 +22,12 @@ def key_randomizer(original_key):
 
 print("Coded and maintained by Raghav Deo")
 output = key_randomizer(input("Give your password here : "))
-print("This is your key,this key will also be saved in a text file named as password.txt")
 print("Thanks for using our tool !")
 print(output)
-if os.path.exists("password.txt"):
-    sys.stdout = open("password1.txt", "w")
-    print(output)
-    sys.stdout.close()
-if not os.path.exists("password.txt"):
-    sys.stdout = open("password.txt", "w")
-    print(output)
-    sys.stdout.close()
+print("This is your key,this key will also be saved in a text file named as password.txt")
+print("Thanks for using our tool !")
+datetime = datetime.now()
+string = '\n' + 'New Password = ' + '' + output + '     ' + datetime.strftime("\n%b-%d-%Y   %H:%M:%S")
+with open("password.txt", "a") as file:
+    file.write(string)
 quit()
