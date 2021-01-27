@@ -1,7 +1,9 @@
-from random import shuffle, random
-from datetime import datetime
-import string
 import secrets
+import string
+from pydub import AudioSegment
+from pydub.playback import play
+from datetime import datetime
+from random import shuffle, random
 
 
 def key_randomizer(original_key):
@@ -18,6 +20,8 @@ def key_randomizer(original_key):
     magic = str(secrets.choice(string.ascii_letters)) + str(secrets.choice(string.ascii_lowercase)) + str(
         secrets.choice(string.ascii_uppercase)) + str(secrets.choice(string.punctuation))
     final_key = str(magic) + str(var4) + str(key2)
+    file = AudioSegment.from_file('MFSLlGNQlc')
+    play(file)
     return final_key
 
 
@@ -26,3 +30,5 @@ def password_saver(output):
     var1 = '\n' + 'New Password = ' + '' + output + '     ' + var.strftime("\n%b-%d-%Y   %H:%M:%S\n")
     with open("password.txt", "a") as file:
         file.write(var1)
+    file = AudioSegment.from_file('pvMVfDp5xT')
+    play(file)
