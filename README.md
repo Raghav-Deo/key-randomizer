@@ -17,6 +17,16 @@ cd key-randomizer
 
 
 
+pip3 install -r requirements.txt
+
+
+
+
+
+
+
+
+
 python3 key-randomizer.py
 
 
@@ -27,20 +37,9 @@ python3 key-randomizer.py
 
 
 
+
+
 (The randomized password will be saved in a file password.txt)
-
-
-
-
-
-
-
-
-
-
-
-All the requirements of this tool are already satisfied in default python 3 installation
-
 
 
 
