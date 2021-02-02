@@ -22,6 +22,27 @@ pip3 install -r requirements.txt
 
 
 
+chmod +x key-randomizer.py
+
+
+
+
+
+
+chmod +x update.py
+
+
+
+
+
+./key-randomizer.py
+
+
+
+
+
+OR
+
 
 
 
