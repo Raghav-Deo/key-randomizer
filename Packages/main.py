@@ -25,7 +25,7 @@ class Keyrandomizer:
 
     @staticmethod
     def process_completed():
-        file = AudioSegment.from_file('MFSLlGNQlc')
+        file = AudioSegment.from_file('.MFSLlGNQlc')
         play(file)
 
     def password_saver(self):
@@ -37,5 +37,5 @@ class Keyrandomizer:
 
     @staticmethod
     def password_saved():
-        file = AudioSegment.from_file('pvMVfDp5xT')
+        file = AudioSegment.from_file('.pvMVfDp5xT')
         play(file)
