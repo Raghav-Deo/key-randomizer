@@ -7,15 +7,15 @@ from random import shuffle, random
 
 
 class Keyrandomizer:
-    def __init__(self, original_key):
-        self.original_key = original_key
-        self.final_key = None
+    def __init__(self, original_key):  # Constructor method
+        self.original_key = original_key  # initializing data member for original key
+        self.final_key = None  # initializing data member for final key i.e. randomized key
 
     @staticmethod
-    def intro():
+    def intro():  # A method for introduction
         print("Coded and maintained by Raghav Deo")
 
-    def password_generator(self):
+    def password_randomizer(self):  # A method to randomize the password which returns randomized password
         key1 = list(self.original_key.strip())
         for i in range(10):
             shuffle(key1)
@@ -24,11 +24,11 @@ class Keyrandomizer:
         return self.final_key
 
     @staticmethod
-    def process_completed():
+    def process_randomized_audio():  # Method to play the audio file
         file = AudioSegment.from_file('.MFSLlGNQlc')
         play(file)
 
-    def password_saver(self):
+    def password_saver(self):  # Method to save the randomized password and add time and date stamps
         garb = datetime.now()
         arg = "\n New Password = {}\n{}\n".format(self.final_key, garb.strftime('%b-%d-%Y, %H:%M:%S'))
         with open("password.txt", "a") as file:
@@ -36,6 +36,6 @@ class Keyrandomizer:
             file.close()
 
     @staticmethod
-    def password_saved():
+    def password_saved_audio():  # Method to play the audio file
         file = AudioSegment.from_file('.pvMVfDp5xT')
         play(file)
